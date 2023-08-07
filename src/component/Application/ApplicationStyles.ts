@@ -172,6 +172,7 @@ export const NoticeTitle = styled.h1`
 
 export const NoticeText = styled.p`
   font-size: 0.875rem;
+  font-family: 'GmarketSansLight';
   font-weight: light;
   line-height: normal;
   color: #000000;
@@ -191,6 +192,7 @@ export const TextContainer = styled.div`
 export const StyledTextarea = styled.textarea`
   width: 32.375rem;
   height: 10rem;
+  resize: none;
   border-radius: 0.625rem;
   border: 1px solid #dbdbdf;
   background: #fafafa;
@@ -254,7 +256,7 @@ export const SaveBtn = styled(StyledButton)`
   color: #358e48;
   font-size: 0.9375rem;
   font-style: normal;
-  font-weight: 500;
+  font-family: 'GmarketSansMedium';
   line-height: 0.9625rem;
 
   &:hover {
