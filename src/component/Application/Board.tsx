@@ -47,7 +47,7 @@ const Board: React.FC = () => {
   //       });
   //   }, []);
 
-  const [questions, setQuestions] = useState<string[]>([]);
+  const [questions, setQuestions] = useState<Array<string>>([]);
 
   useEffect(() => {
     setQuestions([...recruitment.questions]);
@@ -74,7 +74,7 @@ const Board: React.FC = () => {
   //     });
   // }, []);
 
-  const [answer, setAnswer] = useState<string[]>([]);
+  const [answer, setAnswer] = useState<Array<string>>([]);
   const [supportField, setSupportField] = useState<string>('사과🍎');
   const [isAttending, setIsAttending] = useState<boolean>(true);
   const [isSubmit, setIsSubmit] = useState<boolean>(false);
@@ -95,6 +95,8 @@ const Board: React.FC = () => {
     //   .catch((error) => {
     //     console.error('에러 발생:', error);
     //   });
+
+    console.log(answer);
   };
 
   const submit = () => {

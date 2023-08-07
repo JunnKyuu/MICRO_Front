@@ -6,7 +6,7 @@ export interface User {
 }
 
 export interface Application {
-  answer: string[];
+  answer: Array<string>;
   supportField: string;
   grade: string;
   isAttending: boolean;
@@ -18,10 +18,10 @@ export interface TextareaProps {
   onChange: React.ChangeEventHandler<HTMLTextAreaElement>;
 }
 export interface TextareaContainerProps {
-  questions: string[];
-  setQuestions: React.Dispatch<React.SetStateAction<string[]>>;
-  answer: string[];
-  setAnswer: React.Dispatch<React.SetStateAction<string[]>>;
+  questions: Array<string>;
+  setQuestions: React.Dispatch<React.SetStateAction<Array<string>>>;
+  answer: Array<string>;
+  setAnswer: React.Dispatch<React.SetStateAction<Array<string>>>;
 }
 
 export interface BasicInfoProps {
@@ -36,8 +36,8 @@ export interface BasicInfoProps {
   isSubmit: boolean;
   setIsSubmit: React.Dispatch<React.SetStateAction<boolean>>;
   recruitment: {
-    applicationField: string[];
-    questions: string[];
+    applicationField: Array<string>;
+    questions: Array<string>;
   };
 }
 
